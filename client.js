@@ -89,10 +89,15 @@ const penguins = [
   {
     name: 'Macaroni',
     colors: ['Black', 'White', 'Yellow'],
-    size: 0.5,
+    // size: 0.5,
     isCute: true,
   },
 ];
+
+console.log(penguins);
+console.log(penguins[7]);
+penguins[7].size = 0.8;
+console.log(penguins[7]);
 
 // find all of the truly adorable penguins
 // - put only the adorable penguins in a new list
@@ -104,21 +109,30 @@ const penguins = [
 // give back a new list
 function checkForAdorablePenguins(penguinList, maxSize) {
   const newList = [];
+  let sizeTotal = 0;
 
   // find the adorable penguins
   for (let i = 0; i < penguinList.length; i++) {
     const penguin = penguinList[i];
     // console.log(penguin);
+    // console.log(penguin.size);
+    sizeTotal = sizeTotal + penguin.size;
 
     if (penguin.isCute && penguin.size < maxSize) {
       // added to newList
       newList.push(penguin);
     }
   }
+  console.log(sizeTotal);
 
   return newList; // new list
 }
 
+// soooo adorable much penguin
 const adorablePenguins = checkForAdorablePenguins(penguins, 0.6);
 
+// view penguin list for those adorable creatures
 console.log(adorablePenguins);
+
+// not adorable penguins
+console.log(penguins[5]);
