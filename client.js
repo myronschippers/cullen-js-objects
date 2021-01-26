@@ -93,3 +93,9 @@ const penguins = [
     isCute: true,
   },
 ];
+
+// find all of the truly adorable penguins
+// - put only the adorable penguins in a new list
+// - what is adorable?
+//   * isCute is true
+//   * the penguin is under a certain size
