@@ -22,3 +22,15 @@ console.log(baseballCap.type);
 console.log(baseballCap[hatColorPropKey]);
 
 console.log(Object.keys(baseballCap));
+
+const bowlerHat = {
+  type: 'Bowler',
+  color: 'Crimson',
+  size: 13,
+  interior: {
+    type: 'silk',
+    color: 'bright red',
+  },
+};
+
+console.log(bowlerHat.interior['color']);
