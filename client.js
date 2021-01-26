@@ -134,5 +134,4 @@ const adorablePenguins = checkForAdorablePenguins(penguins, 0.6);
 // view penguin list for those adorable creatures
 console.log(adorablePenguins);
 
-// not adorable penguins
-console.log(penguins[5]);
+// all penguins are adorable, you monster!
