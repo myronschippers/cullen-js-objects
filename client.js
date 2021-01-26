@@ -99,3 +99,26 @@ const penguins = [
 // - what is adorable?
 //   * isCute is true
 //   * the penguin is under a certain size
+
+// function take current list, size of penguin
+// give back a new list
+function checkForAdorablePenguins(penguinList, maxSize) {
+  const newList = [];
+
+  // find the adorable penguins
+  for (let i = 0; i < penguinList.length; i++) {
+    const penguin = penguinList[i];
+    // console.log(penguin);
+
+    if (penguin.isCute && penguin.size < maxSize) {
+      // added to newList
+      newList.push(penguin);
+    }
+  }
+
+  return newList; // new list
+}
+
+const adorablePenguins = checkForAdorablePenguins(penguins, 0.6);
+
+console.log(adorablePenguins);
